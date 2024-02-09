@@ -1,0 +1,587 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+body{
+  background-color: rgb(192,149,120);
+  overflow-x: hidden;
+}
+#lert:hover{
+
+  color:  rgb(214, 57, 0);
+}
+.head{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 54px;
+    width: 100%;
+    background-color: rgb(32, 31, 31);
+    padding: 9px; 
+    z-index: 1000;   
+ }
+ .heads{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .head2 button{
+    height: 25px;
+    width: 70px;
+    font-size: 14px;
+    background-color: rgb(122, 173, 45);
+    color: white;
+    border-radius: 5px;
+    border: none;
+ }
+ .head2 button:hover{
+   background-color: rgb(122, 173, 45, 0.8);
+
+ 
+ }
+ .newlaptop{
+  height: 180px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+@media screen and (max-width:1200px) {
+  .newlaptop{
+    display: none;
+    height: fit-content;
+  }
+  
+}
+  .ekomart{
+    font-size: 35px;
+    font-weight: 1000;
+    border-right: solid 2px rgb(95, 94, 94);
+    height: 180px;
+    padding: 60px;
+  }
+
+  form{
+    display: flex;
+    flex-direction: row;
+    padding: 6px;
+    align-items: center;
+    border: none;
+  }
+  .input11{
+    flex-grow: 2;
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+    height: 40px;
+    
+  }
+  .input11:focus{
+    outline: none;
+    
+  }
+  form:focus-within{
+    outline: 2px solid  rgb(214, 57, 0);
+
+  }
+  .button11{
+    border: none;
+    font-size: 13px;
+    color: white;
+    width: 80px;
+    background-color: rgb(214, 57, 0);
+    height: 30px;
+    border-radius: 5px;
+    transition: all 0.9;
+  
+
+  }
+  .button11:hover{
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: scale(0.9);
+  
+  }
+  #lastone{
+    color:  rgb(214, 57, 0);
+  }
+  .anchor li{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 16px;
+    font-weight: 800;
+    margin-top: 30px;
+  }
+
+  .anchor li:hover{
+    color:  rgb(214, 57, 0);
+  }
+  .ah{
+    font-weight: 800;
+    font-size: 12px;
+    color: rgb(168, 168, 168);
+  }
+   .ad1{
+    border-right: 2px solid rgb(122, 121, 121);
+    padding: 17px;
+  }
+  .ad{
+    font-weight: 500;
+  }
+  .reddigit p{
+    background-color:  rgb(214, 57, 0);
+    margin-left: 20px;
+    border-radius: 15px;
+    font-size: 18px;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    height: auto;
+    padding: 2px;
+  }
+  #fasearch{
+    color:  rgb(0, 0, 0);
+   }
+   .phonemenu{
+    display:flex;
+    justify-content: space-around;
+    visibility: hidden;
+    align-items: center;
+  
+    
+   }
+   
+  @media screen and (max-width:1200px){
+  
+    .phonemenu{
+    visibility: visible;
+   margin-top: 0px;
+   padding-bottom: 10px;
+   }
+  }
+  
+  .phonelinks li{
+    width:100%;
+    margin-top: 20px;
+    margin: 20px;
+    
+    
+  }
+  .phonelinks li>a{
+    font-size: 18px;
+    font-weight: 800;
+    color: white;
+    text-decoration: none;
+   }
+  
+   #just{
+    color:  rgb(214, 57, 0);
+   padding: 10px;
+   font-size: 19px;
+   font-weight: 700;
+    border-bottom: 1px white solid;
+   position: absolute; 
+   width: 100%;
+   padding: 5px;
+    text-decoration: none; 
+    
+   }
+   .phonelinks{
+    height: 30px;
+    overflow: hidden;
+    width: 35px;
+   
+   }
+
+  .list a:hover{
+    color:  rgb(214, 57, 0);
+  
+   }
+   .list a{
+   text-decoration: none;
+     color: white; font-size: 14px;
+   }
+   .list {
+    list-style-type: none;
+   }
+
+
+   .homemu{
+   display: inline-block;  
+  }
+   
+  #no{
+    border: none;
+  }
+
+
+  #homemu{
+    border: none;
+   
+  }
+  #toor{
+    
+    display: none;
+  }
+  #tooor{
+  
+    display: none;
+  }
+   #roo{
+    font-size: 19px;
+           font-weight: 700;
+            border-bottom: 1px white solid;
+           position: absolute; width: 100%;
+           padding: 5px;
+           color: white;
+            text-decoration: none; 
+
+  }
+  #root{
+    font-size: 19px;
+           font-weight: 700;
+            border-bottom: 1px white solid;
+           position: absolute; width: 100%;
+           padding: 5px;
+           color: white;
+            text-decoration: none; 
+
+  }
+  #rooot{
+    font-size: 19px;
+           font-weight: 700;
+            border-bottom: 1px white solid;
+           position: absolute; width: 100%;
+           padding: 5px;
+           color: white;
+            text-decoration: none; 
+
+  }
+
+ 
+  
+  .homemub{
+    overflow: hidden;
+    display: none;
+  }
+  #oor{
+    overflow: hidden;
+    display: none;
+
+  }
+
+
+
+ 
+.contactlaptop{
+  
+  text-align: center;
+  color: white;
+  background-color: black;
+  width: 100%;
+  height: auto;
+  font-size: 18px;
+  padding: 70px;
+  text-align: center;
+}
+
+.contacts{
+  font-size: 30px;
+  font-weight: 900;
+}
+.contactss{
+  color: rgb(131, 128, 128);
+}
+.contactss a{
+  color: white;
+  font-weight: 500;
+}
+.contactss a:hover{
+  color:  rgb(214, 57, 0);
+}
+#small{
+  height: 30px;
+  width: 30px;
+  color: white;
+}
+.map{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 110vh;
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 30px;
+
+}
+ 
+@media screen and (max-width:1200px){
+  
+ .map{
+  height: auto;
+ }
+
+ }
+
+.mapright{
+ width: auto;
+ height: auto;
+}
+.git{
+   aspect-ratio: 1;
+   width: 500px;
+}
+@media screen and (max-width:600px){
+  
+  .git{
+    width: 400px;
+    aspect-ratio: 1;
+  }
+  
+  }
+  @media screen and (max-width:350px){
+  
+    .git{
+      width: 150px;
+      aspect-ratio: 1;
+    }
+    
+    }
+  
+.mapleft2{
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.maplefticon{
+  line-height: 4;
+  font-size: 16px;
+}
+
+
+.dis{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.message{
+  line-height: 2;
+  width: min(100%, 700px);
+  
+}
+.messagel3 #one{
+  height: 40px;
+  width: max(100%);
+  font-size: larger;
+  border: 2px solid  rgb(255, 255, 255);
+  border-radius: 4px;
+  outline: none;
+}
+.messagel6 #one{
+  height: 40px;
+  width: max(100%);
+  font-size: larger;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 4px;
+  outline: none;
+} 
+.messagel4 textarea{
+  height: 170px;
+  outline: none;
+  width:max( 100%) ;
+  font-size: 16px;  
+  border: 2px solid rgb(255, 255, 255);
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+.messagel5 button{
+  height: 35px;
+  width: 190px;
+  border-radius: 5px;
+  border: none;
+  background-color:  rgb(0, 0, 0);
+  font-size: 16px;
+  color: white;
+  transition: all 0.9s;
+}
+.messagel5 button:hover{
+  background-color:  rgb(2, 2, 2);
+  transform: scale(1.1);
+  
+}
+.message input{
+  margin-bottom: 10px;
+}
+.messagearea{
+  height: auto;
+  display: flex ;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap ;
+  padding: 10px;
+  border: solid 2px rgba(255, 255, 255, 0.582);
+  border-radius: 5px;
+  margin: 10px;
+  padding: 10px;
+  gap: 20px;
+ 
+  
+ }
+ .messagearea input,textarea{
+  background: transparent;
+ 
+ }
+ 
+  
+  
+ .messagepic1{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap ;
+  gap: 50px;
+  line-height:2;
+ }
+
+
+     
+.photos{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width:1200px){
+  .photos{
+    display: none;
+  } 
+}
+
+
+.photopack>img{
+  transition: all 0.9s;
+  border-radius: 7px;
+}
+.photopack>img:hover{
+  filter: opacity(60%);
+ transform: translateY(-14px);
+  border-radius: 7px;
+} 
+
+
+.footer{
+  height: 80vh;
+  background-color: rgb(0, 0, 0);
+  color: white;
+ 
+ 
+}
+@media screen and (max-width:1200px) {
+  .footer{
+    text-align: center;
+    height: auto;
+    margin-bottom: 30px;
+  }
+}
+ 
+ #meo{
+    display: flex;
+    flex-direction: row;
+   border: 2px solid rgb(255, 255, 255);
+    padding: 6px;
+    align-items: center;
+  }
+ 
+  .input1{
+    flex-grow: 2;
+    border: none;
+    font-size: 16px;
+    padding: 5px;
+    height: 40px;
+    background: none;
+    
+  }
+  .input1:focus{
+    outline: none;
+    
+  }
+
+  #meo:focus-within{
+    outline: 2px solid   rgb(192,149,120);
+    border: none;
+
+  }
+  .button1{
+    border-radius: 5px;
+    border: none;
+    font-size: 13px;
+    color: white;
+    width: 80px;
+    height: 38px;
+     background-color: rgb(192,149,120);
+
+  }
+#flexthebuttom{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 60px;
+  border-bottom: solid white 1px;
+}
+#flexdown{
+display: flex; 
+flex-wrap: wrap;
+justify-content: space-around;
+align-items: center;
+padding: 50px;
+ 
+}
+.lasticons i:hover{
+  color:  rgb(214, 57, 0);
+}
+
+.gobottom{
+  display: flex;
+  height: 10vh;
+  background-color: black;
+  color: white;
+  justify-content: space-around;
+  position: fixed;
+  visibility: hidden;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+@media screen and (max-width:1200px) {
+  .gobottom{
+    visibility: visible;
+  }
+
+
+}
+
+
+.gobootom1 a{
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+  font-size: 16px;
+  align-items: center;
+  
+}
+.gobootom1{
+  border: solid white 1px;
+  border-top: none ;
+  border-bottom: none;
+  border-right: none;
+  text-align: center;
+  padding: 3px;
+  width: 100%;
+}
+

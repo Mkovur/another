@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>contact</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="./jquery.js"></script>
+    <script src="jav.js"></script>
+    <link rel="stylesheet" href="contact.css"> 
+    <link rel="stylesheet" href="index-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+  <style>
+
+
+
+
+
+.aptec{
+    visibility: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  @media screen and (max-width:1200px) {
+    .aptec{
+      visibility: inherit;
+      margin-top: 50px;
+    }
+    
+  }
+  .lef{
+    height: 50px;
+    aspect-ratio: 1;
+    display: none;
+    overflow: scroll;
+   
+    
+  }
+  
+  .vid a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+  }
+  .vid{
+    padding: 30px;
+    position: relative;
+    
+    
+    
+  }
+  
+  .vid li{
+    list-style-type: none;
+   
+    display: none;
+  }
+  .vid li>a{
+    text-decoration: none;
+    
+  }
+  .vid>a{
+    font-weight: 800;
+    color: rgb(202, 195, 195);
+  }
+  
+  #tcatnoc{
+    color: red;
+  
+  }
+  #golb::after{
+    content: '+';
+    color: red;
+    padding-left: 46px;
+   
+  }
+  #no::after{
+    content: '+';
+    color: red;
+    padding-left: 21px;
+  }
+  #posh::after{
+    content: '+';
+    color: red;
+    padding-left: 38px;
+  }
+  #segap::after{
+    content: '+';
+    color: red;
+    padding-left: 26px;
+  }
+
+#log{
+    color: orangered;
+}
+@media screen and (max-width:1200px) {
+    
+    .waw{
+        display: none;
+    }
+  }
+.mapright1{
+    border-radius: 5px;
+}
+  @media screen and (max-width:600px) {
+   
+.mapright1{
+    width: 400px;
+    aspect-ratio: 1;
+}
+  }
+  .fasearch{
+    color: black;
+  }
+
+  </style>
+</head>
+<body>
+  <div class="head">
+   <div class="heads">
+    <div class="head1"><img src="envato.jpg" ></div>
+    <div class="head2"><button>Buy now</button></div>
+   </div>
+  </div>
+
+
+
+ 
+<div class="aptec">
+
+ 
+<img src="menu-rounded (2).png"  style="width: 30px;" id="whenalist">
+
+<div class="lef">
+  <i class="fa fa-close" id="removemenu"  style="font-size:30px; color: white;  "></i> 
+ <div class="vid"> 
+  <a href="#" id="no" > Home </a><br>
+ <li  id="emoh">
+  <a href="#">Home 1</a><br><br>
+  <a href="#">Home 2</a><br><br>
+  <a href="#">Home 3</a><br><br>
+  <a href="#">Home 4</a><br><br>
+  <a href="#">Home 5</a><br><br>
+  <a href="#">Home 6</a><br><br>
+  <a href="#">Home 7</a><br><br>
+  <a href="#">Home 8</a><br><br>
+  <a href="#">Home 9</a><br><br>
+  <a href="#">Home 10</a><br><br>
+  <a href="#">Home 11</a><br><br>
+  <a href="#">Home 12</a><br><br>
+  <a href="#">Home 13</a><br><br>
+  <a href="#">Home 14</a><br><br>
+  <a href="#">Home 15</a><br><br>
+  <a href="#">Home 16 </a><br><br>
+  <a href="#">Home 17 </a><br><br>
+  <a href="#">Home 18 </a><br><br>
+  <a href="#">Home 19 </a><br><br>
+  <a href="#">Home 20 </a><br><br>
+  <a href="#">Home 21 </a><br><br>
+  <a href="#">Home 22 </a><br><br>
+  <a href="#">Home 23  </a><br><br>
+</li><br>
+ 
+<a href="#" id="tuoba">About</a><br><br>
+
+<a href="#" id="golb">Blog</a><br>
+<li id="ggolb">
+  <a href="#">blog-gallery</a><br><br>
+  <a href="#">blog-grid</a><br><br>
+  <a href="#">blog-no image</a><br><br>
+  <a href="#">blog-standard</a><br><br>
+  <a href="#">blog- modern</a><br><br>
+  <a href="#">single post</a><br><br>
+</li><br>
+
+<a href="#" id="posh">Shop</a><br><br>
+<li id="poshh">
+<a href="#">Cart</a><br><br>
+<a href="#">Checkout</a><br><br>
+<a href="#">My account</a><br><br>
+<a href="#">Order tracking</a><br><br>
+<a href="#">wishlist</a><br><br>
+<a href="#">Product style 1</a><br><br>
+<a href="#">Product style 2</a><br><br>
+<a href="#">Product style 3</a><br><br>
+<a href="#">Product style 4</a><br><br>
+<a href="#">Product style 5</a><br><br>
+<a href="#">simple Product</a><br><br>
+<a href="#">variable Product</a><br><br>
+<a href="#">affiliate Product</a><br><br>
+<a href="#">Group Product</a><br><br>
+<a href="#">single Product style</a><br><br>
+
+</li>
+
+<a href="#" id="segap">Pages</a><br>
+<li id="segapp">
+<a href="#">FAQ</a><br><br>
+<a href="#">Icons</a><br><br>
+<a href="#">Payment method</a><br><br>
+<a href="#">Shipping method</a><br><br>
+<a href="#">Order traking</a><br><br>
+<a href="#">Login</a><br><br>
+</li><br>
+
+<a href="#" id="tcatnoc">Contact</a>
+
+</div>
+</div>
+
+<div class="middl">
+  <div class="eko"><h1>ekomart</h1></div>  
+</div>
+
+<div class="righ">
+ <!-- <i class="fa fa-shopping-basket" style="font-size:36px;"></i> --> 
+  <img src="shopping-basket.png" alt="" style="width: 30px;">
+</div>
+</div>
+
+<div class="waw">
+
+    <div class="top-nav">
+        <div class="forlaptop1">
+            <h1><a href="">ekommart</a></h1>
+        </div>
+        <div class="forlaptop2">
+            <form action="">
+                <i class="fa fa-search" style="font-size:20px" id="fasearch"></i>
+                <input type="text" placeholder="Search products..." class="input11">
+                <button class="button11">Search</button>
+            </form>
+        </div>
+        <div class="top-nav-fa">
+            <div class="drpdwn">
+                <a href="#"><i class="fa fa-user-o"></i></a>
+                <div class="drp-cont">
+                    <h5>Sign in<a href="">Create an Account</a></h5>
+                    <div class="field">
+                        Username or email <sup>*</sup>
+                    </div>
+                    <input id="Password" type="email" name="password" placeholder="Username" required> <br><br>
+                    <div class="field">
+                        Password <sup>*</sup>
+                    </div>
+                    <input id="Password" type="password" name="password" placeholder="Password" required> <br><br>
+                    <button class="scale">LOGIN</button> <br><br>
+                    <p>Lost your password?</p>
+                </div>
+            </div>
+            <a href="#" class="fa fa-heart"><sup class="heart-fa">53</sup></a>
+            <div class="cart-holder">
+                <div class="cart-modal-overlay">
+                    <div class="cart-modal">
+                        <div class="cart-modal-top">
+                            <p>SHOPPING CART</p>
+                            <i id="close-btn" class="fa fa-times"></i>
+                        </div>
+                        
+                        <h1 class="cart-is-empty">No Produts in the cart.</h1>
+
+                        <div class="product-rows"> </div>
+                        <div class="total">
+                            <h3 class="cart-total">TOTAL <span class="total-price">$0</span></h3>
+                            <button class="purchase-btn">PURCHASE</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-btn">
+                    <a href="#" id="cart" class="fa fa-shopping-basket"><sup class="quantity">01</sup></a>
+                </div>
+            </div>
+            <div>$0.00</div>
+            
+        </div>
+        <script>
+            const cart = document.querySelector("#cart");
+            const cartModalOverlay = document.querySelector(".cart-modal-overlay");
+
+            cart.addEventListener("click", () => {
+                if (cartModalOverlay.style.transform === "translateX(-200%)") {
+                    cartModalOverlay.style.transform = "translateX(0)";
+                } else {
+                    cartModalOverlay.style.transform = "translateX(-200%)";
+                }
+            });
+
+            const closeBtn = document.querySelector("#close-btn");
+
+            closeBtn.addEventListener("click", () => {
+                cartModalOverlay.style.transform = "translateX(-200%)";
+            });
+
+            cartModalOverlay.addEventListener("click", (e) => {
+                if (e.target.classList.contains("cart-modal-overlay")) {
+                    cartModalOverlay.style.transform = "translateX(-200%)";
+                }
+            });
+            const addToCart = document.getElementsByClassName("add-to-cart");
+            const productRow = document.getElementsByClassName("product-row");
+
+            for (var i = 0; i < addToCart.length; i++) {
+                button = addToCart[i];
+                button.addEventListener("click", addToCartClicked);
+            }
+
+            function addToCartClicked(event) {
+                button = event.target;
+                var cartItem = button.parentElement;
+                var price =
+                    cartItem.getElementsByClassName("product-price")[0].innerText;
+
+                var imageSrc =
+                    cartItem.getElementsByClassName("product-image")[0].src;
+                addItemToCart(price, imageSrc);
+                updateCartPrice();
+            }
+
+            function addItemToCart(price, imageSrc) {
+                var productRow = document.createElement("div");
+                productRow.classList.add("product-row");
+                var productRows = document.getElementsByClassName("product-rows")[0];
+                var cartImage = document.getElementsByClassName("cart-image");
+
+                for (var i = 0; i < cartImage.length; i++) {
+                    if (cartImage[i].src == imageSrc) {
+                        alert("This item has already been added to the cart");
+                        return;
+                    }
+                }
+
+                var cartRowItems = `
+<div class="product-row">
+    <img class="cart-image" src="${imageSrc}" alt="">
+    <span class ="cart-price">${price}</span>
+    <input class="product-quantity" type="number" value="1" style="width:100px" min = "1" max = "10" >
+    <button class="remove-btn">Remove</button>
+    </div>
+    
+  `;
+                productRow.innerHTML = cartRowItems;
+                productRows.append(productRow);
+                productRow
+                    .getElementsByClassName("remove-btn")[0]
+                    .addEventListener("click", removeItem);
+                productRow
+                    .getElementsByClassName("product-quantity")[0]
+                    .addEventListener("change", changeQuantity);
+                updateCartPrice();
+            }
+            const removeBtn = document.getElementsByClassName("remove-btn");
+            for (var i = 0; i < removeBtn.length; i++) {
+                button = removeBtn[i];
+                button.addEventListener("click", removeItem);
+            }
+
+            function removeItem(event) {
+                btnClicked = event.target;
+                btnClicked.parentElement.parentElement.remove();
+                updateCartPrice();
+            }
+
+            var quantityInput =
+                document.getElementsByClassName("product-quantity")[0];
+
+            for (var i = 0; i < quantityInput; i++) {
+                input = quantityInput[i];
+                input.addEventListener("change", changeQuantity);
+            }
+
+            function changeQuantity(event) {
+                var input = event.target;
+                if (isNaN(input.value) || input.value <= 0) {
+                    input.value = 1;
+                }
+                updateCartPrice();
+            }
+            function updateCartPrice() {
+                var total = 0;
+                for (var i = 0; i < productRow.length; i += 2) {
+                    cartRow = productRow[i];
+                    var priceElement = cartRow.getElementsByClassName("cart-price")[0];
+                    var quantityElement =
+                        cartRow.getElementsByClassName("product-quantity")[0];
+                    var price = parseFloat(priceElement.innerText.replace("$", ""));
+                    var quantity = quantityElement.value;
+                    total = total + price * quantity;
+                }
+                document.getElementsByClassName("total-price")[0].innerText =
+                    "$" + total;
+
+                document.getElementsByClassName("quantity")[0].textContent = i /= 2;
+            }
+
+            const purchaseBtn = document.querySelector(".purchase-btn");
+
+            const closeCartModal = document.querySelector(".cart-modal");
+
+            purchaseBtn.addEventListener("click", purchaseBtnClicked);
+
+            function purchaseBtnClicked() {
+                alert("Thank you for your purchase");
+                cartModalOverlay.style.transform = "translateX(-100%)";
+                var cartItems = document.getElementsByClassName("product-rows")[0];
+                while (cartItems.hasChildNodes()) {
+                    cartItems.removeChild(cartItems.firstChild);
+                }
+                updateCartPrice();
+            }
+        </script>
+    </div>
+    <div class="nav">
+
+        <div class="home dropdown">
+            <a id="home-btn" href="index.html">Home <span style="padding-left: 10px;"><i class="fa fa-caret-down"></i></span></a>
+            
+        </div>
+        <div class="about dropdown">
+            <a href="" style="margin-top: 3px;">About</a>
+        </div>
+        <div class="dropdown">
+            <a href="#" id="shop-btn">Shop <span style="padding-left: 10px;"><i class="fa fa-caret-down"></i></span></a>
+            
+        </div>
+        <div class="dropdown">
+            <a href="#">Blog <span style="padding-left: 10px;"><i class="fa fa-caret-down"></i></span></a>
+            <div class="blog drop-down-content">
+                <a href="https://demo2.wpopal.com/ekommart/blog/?sidebar-blog=0&blog_type=blog-style-1">Blog - Gallery view</a>
+                <a href="https://demo2.wpopal.com/ekommart/blog/?sidebar-blog=0&blog_type=blog-style-2">Blog - Grid view</a>
+                <a href="https://demo2.wpopal.com/ekommart/blog/?sidebar-blog=0&blog_type=blog-style-3">Blog - No image</a>
+                <a href="https://demo2.wpopal.com/ekommart/blog/?blog_type=blog-style-4">Blog - Standard</a>
+                <a href="https://demo2.wpopal.com/ekommart/blog/?&blog_type=blog-style-5">Blog - Modern</a>
+                <a href="https://demo2.wpopal.com/ekommart/once-drawn-a-time-in-the-west/">Single Post</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" id="pag-btn" >Pages <span style="padding-left: 10px;"><i class="fa fa-caret-down"></i></span></a>
+        </div>
+        <div class="dropdown">
+            <a href="contact.html" style="margin-top: 2px;" id="log">Contact</a>
+        </div>
+    </div>
+    <div class="drop-home">
+        <div class="drop-down-1-home">
+            <div class="drop-item">
+                <a href="https://demo2.wpopal.com/ekommart/home-1/"><img src="17.jpg" alt=""></a>
+                <a href="https://demo2.wpopal.com/ekommart/home-1/"><p>Sports & Outdoors <span>01</span></p></a>
+            </div>
+            <div class="drop-item">
+                <a href="https://demo2.wpopal.com/ekommart/home-5/"><img src="18.jpg" alt=""></a>
+                <a href="https://demo2.wpopal.com/ekommart/home-5/"><p>Toys & Kids <span>02</span></p></a>
+            </div>
+            <div class="drop-item">
+                <a href="https://demo2.wpopal.com/ekommart/home-6/"><img src="19.jpg" alt=""></a>
+                <a href="https://demo2.wpopal.com/ekommart/home-6/"><p>Electronics & Computer <span>01</span></p></a>
+            </div>
+            <div class="drop-item">
+                <a href="https://demo2.wpopal.com/ekommart/home-18/"><img src="26.jpg" alt=""></a>
+                <a href="https://demo2.wpopal.com/ekommart/home-18/"><p>Marketplace <span>01</span></p></a>
+            </div>
+            <div class="drop-item">
+                <a href="https://demo2.wpopal.com/ekommart/home-9/"><img src="20.jpg" alt=""></a>
+                <a href="https://demo2.wpopal.com/ekommart/home-9/"><p>Food & Grocery <span>02</span></p></a>
+            </div>
+        </div>
+        <br><br><br>
+        <div class="drop-down-2-home">
+            <div class="drop-item">
+                <a href="https://demo2.wpopal.com/ekommart/home-16/"><img src="24.jpg" alt=""></a>
+                <a href="https://demo2.wpopal.com/ekommart/home-16/"><p>Clothing, Watch & Jewelry <span>03</span></p></a>
+            </div>
+            <div class="drop-item">
+                <a href="https://demo2.wpopal.com/ekommart/home-13/"><img src="22.jpg" alt=""></a>
+                <a href="https://demo2.wpopal.com/ekommart/home-13/"><p>Beauty & Health <span>02</span></p></a>
+            </div>
+            <div class="drop-item">
+                <a href="https://demo2.wpopal.com/ekommart/home-11/"><img src="21.jpg" alt=""></a>
+                <a href="https://demo2.wpopal.com/ekommart/home-11/"><p>Tools & Parts <span>01</span></p></a>
+            </div>
+            <div class="drop-item">
+                <a href="https://demo2.wpopal.com/ekommart/home-17/"><img src="25.jpg" alt=""></a>
+                <a href="https://demo2.wpopal.com/ekommart/home-17/"><p>Home & Furniture <span>01</span></p></a>
+            </div>
+            <div class="drop-item">
+                <a href="https://demo2.wpopal.com/ekommart/home-14/"><img src="23.jpg" alt=""></a>
+                <a href="https://demo2.wpopal.com/ekommart/home-14/"><p>Clothing, Watch & Jewelry <span>01</span></p></a>
+            </div>
+        </div> <br><br><br>
+        <a class="drop-home-btn" href="https://demo2.wpopal.com/ekommart/landingpage/" style="color: white;">View All Demos <span>(23)</span></a>
+    </div>
+    <div class="shop-all">
+        <div class="shop-first">
+            <div class="shop-lay">
+                <h3>Shop Layouts</h3>
+                <div class="shop-all-links">
+                    <a href="">Shop fullwidth</a>
+                    <a href="">Shop left sidebar</a>
+                    <a href="">Shop right sidebar</a>
+                    <a href="" class="shop-link-new" style="font-weight: 700;">Dokan store list<sup>NEW</sup></a>
+                    <a href="" class="shop-link-new" style="font-weight: 700;">Dokan Vendor store<sup>NEW</sup></a>
+                </div>
+            </div>
+            <div class="product-sty">
+                <h3>Product Style</h3>
+                <div class="shop-all-links">
+                    <a href="">Product Style 1</a>
+                    <a href="">Product Style 2</a>
+                    <a href="">Product Style 3</a>
+                    <a href="">Product Style 4</a>
+                    <a href="">Product Style 5</a>
+                </div>
+            </div>
+            <div class="product-pag">
+                <h3>Product Pages</h3>
+                <div class="shop-all-links">
+                    <a href="https://demo2.wpopal.com/ekommart/shop/kyrie-6-ep-chinese-new-year/">Simple Product</a>
+                    <a href="https://demo2.wpopal.com/ekommart/shop/nike-shox-tl-nova-sp/">Variable Product</a>
+                    <a href="https://demo2.wpopal.com/ekommart/shop/nike-air-force-1-07-lv8/">Group Product</a>
+                    <a href="https://demo2.wpopal.com/ekommart/shop/nike-air-force-1-07-lv8/">Affliate Product</a>
+                    <a href="https://demo2.wpopal.com/ekommart/shop/nike-shox-tl-nova-sp/?single_product_gallery_layout=gallery">Single Product Style</a>
+                </div>
+            </div>
+        </div> <br><br>
+        <div class="shop-sec">
+            <div class="shop-pag">
+                <h3>Shop Pages</h3>
+                <div class="shop-all-links">
+                    <a href="">Cart</a>
+                    <a href="">Checkout</a>
+                    <a href="">My Account</a>
+                    <a href="">Order tracking</a>
+                    <a href="">Wishlist</a>
+                </div>
+            </div>
+            <div class="shop-img">
+                <h4>PREMIUM SUPPLEMENTS</h4> <br>
+                <div class="shop-img-text">
+                    <h1 style="font-weight: 500;">With a focus on</h1>
+                    <h1 style="font-weight: 700;">Purity & Quality</h1>
+                </div> <br><br><br><br><br>
+                <a href="">Shop now</a>
+            </div>
+        </div>
+    </div>
+    <div class="pag-all">
+        <div class="pag-sec">
+            <div class="pag-pag">
+                <h3>Pre-built Pages</h3>
+                <div class="pag-all-links">
+                    <a href="">About Us</a>
+                    <a href="https://demo2.wpopal.com/ekommart/faq/">FAQ</a>
+                    <a href="https://demo2.wpopal.com/ekommart/404-page/">404 Page</a>
+                    <a href="https://demo2.wpopal.com/ekommart/my-account/">Login</a>
+                    <a href="https://demo2.wpopal.com/ekommart/shipping-method/">Shipping Method</a>
+                    <a href="https://demo2.wpopal.com/ekommart/payment-method/">Payment Method</a>
+                    <a href="https://demo2.wpopal.com/ekommart/order-tracking/">Order tracking</a>
+                </div>
+            </div>
+            <div class="pag-img">
+                <h4>BEST SELLERS</h4>
+                <div class="pag-img-text">
+                    <h1 class="pag-img-h1" style="font-weight: 500;">Kitchen</h1>
+                    <h1 class="pag-img-h1" style="font-weight: 700;">& Dining</h1>
+                </div> <br><br><br><br><br>
+                <a href="">Shop now</a>
+            </div>
+        </div>
+    </div>
+   
+</div>
+
+
+
+
+</div>
+
+
+
+
+</div>
+ 
+   
+
+    <div class="contactlaptop">
+      <div class="contacts">Contacts</div>
+    <div class="contactss"> 
+      <i class="fa fa-home" style="font-size:36px; color: white;"></i>
+      <a href="#">Home</a> > contact</div>
+
+  </div>
+
+
+  <div class="map">
+
+    <div class="mapleft">
+
+      <div class="mapleft1">
+        <h5>GET IN TOUCH</h5>
+      </div>
+
+      <div class="mapleft2">
+        <h1>
+          Visit one of our agency <br>
+          Locations or <br>
+          contact us today
+        </h1>
+      </div>
+
+      <div class="mapleft3">
+        <h2>Head Office</h2>
+
+        <div class="maplefticon">
+
+         <div class="dis" ><div class="mapicon"> <i class="fa fa-map-marker" style="font-size:24px"></i> </div>
+          <div class="mapleftwords"><p>56 Glassgow G1 1Ul New York</p>  </div> </div>
+
+          <div class="dis"><div class="mapicon"><i class="fa fa-envelope" style="font-size:24px"></i> </div>
+          <div class="mapleftwords"><p>contact@emaple.com</p>  </div> </div>
+          
+         <div class="dis"> <div class="mapicon"> <i class="fa fa-phone" style="font-size:24px"></i> </div>
+          <div class="mapleftwords">  <p>+844 123 456 78</p></div></div>
+          
+         <div class="dis"> <div class="mapicon"><i class="fa fa-clock-o" style="font-size:24px"></i> </div>
+          <div class="mapleftwords"><p>Monday to saturday: 9:00am to 16pm</p> </div></div>
+          
+         </div>
+
+      </div>
+
+    </div>
+
+
+    <div class="mapright">
+
+      <!--<img src="map.jpeg" class="mapright1">-->
+      <iframe class="mapright1" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3964.4106396147035!2d3.624604249448273!3d6.469553695296816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103bf979fee11457%3A0xa5d6185fb1770461!2sAptech%20Computer%20Education%20Ajah%20Centre!5e0!3m2!1sen!2sng!4v1678959342059!5m2!1sen!2sng" 
+      width="600"
+       height="450" style="border:0;" allowfullscreen="" loading="lazy"
+       referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+  </div>
+       
+<div class="messagearea">
+
+  <div class="message">
+    <div class="messagel1"><h4>LEAVE A MESSAGE</h4></div>
+    <div class="messagel2"><h1>We love to hear from you</h1></div>
+    <div class="messagel3"><input placeholder="Your Name" type="text" id="one" required></div>
+    <div class="messagel6"><input placeholder="Email" name="email" type="email" id="one" required></div>
+    <div class="messagel3"><input placeholder="Subject" type="text" id="one" required></div>
+    <div class="messagel4"><textarea placeholder="Message" required></textarea></div>
+    <div class="messagel5"><button>Submit</button></div>
+  </div>
+
+<div class="messagepic">
+  <div class="messagepic1">
+    <div class="messpic"><img src="contact-1.png"></div>
+    <div class="messpro">
+      <div><h3>John Doe</h3></div>
+      <div>
+        Senior Marketing<br>
+        Manager<br>
+        phone + 844 123 444 77<br>
+        88<br>
+        Email:<br>
+        contact@example.com </div>
+    </div>
+  </div>
+ 
+  <div class="messagepic1">
+    <div class="messpic"><img src="contact-2.png"></div>
+    <div class="messpro">
+      <div><h3>William Smith</h3></div>
+      <div>
+        Recruiting Manager<br>
+        phone + 844 123 444 77<br>
+        88<br>
+        Email:<br>
+        contact@example.com </div>
+    </div>
+  </div>
+
+  <div class="messagepic1">
+    <div class="messpic"><img src="contact-3.png"></div>
+    <div class="messpro">
+      <div><h3>Emma Stone</h3></div>
+      <div>
+        Human Resource<br>
+        phone + 844 123 444 77<br>
+        88<br>
+        Email:<br>
+        contact@example.com </div>
+    </div>
+  </div>
+
+</div>
+</div>
+
+<div class="photos">
+  <div class="photopack"> <div class="photopack1"></div><img src="IMG-20230206-WA0002.jpg"></div>
+  <div class="photopack"> <div class="photopack1"></div><img src="IMG-20230206-WA0003.jpg"></div>
+  <div class="photopack"> <div class="photopack1"></div><img src="IMG-20230206-WA0003.jpg"></div>
+  <div class="photopack">  <div class="photopack1"></div><img src="IMG-20230206-WA0004.jpg"></div>
+  <div class="photopack">  <div class="photopack1"></div><img src="IMG-20230206-WA0005.jpg"></div>
+</div>     
+
+
+<div class="footer">
+
+ <div id="flexthebuttom">
+
+  <div id="down1">
+    <div class="theend1">
+      <div class="end1"><h3>CONTACT US</h3></div><br><br>
+      <div class="end2">
+        If you have any question, please<br> <span style="color: orangered;">contact us at support@example.com</span>
+      </div>
+  
+      <div class="end3" style="margin-top: 30px;" >
+       <div> <i class="fa fa-user" style="font-size:72px; color: orangered;" > </i> </div>
+       <div style="font-size: 28px;"><span style="font-size: 15px;">+048</span> 800 456 789</div>
+      </div>
+    </div>
+  </div>
+  <div id="down2">
+    <div class="end1"><h3> STORE LOCATION </h3></div><br><br>
+    <div class="end2">
+      Box 565, Charlestown, Nevis, West<br> Indies,Caribbean
+    </div>
+    <div class="end3" style="margin-top: 30px;" >
+      <div> Monday - Friday: 8am - 4pm<br>
+        Saturday: 9am - 5pm </div>
+     </div>
+  </div>
+  <div id="down3">
+    <div class="end1"><h3> CATEGORIES </h3></div><br><br>
+    <div>
+     <ul>
+      <li class="list"><a href="#"> For Men </a></li><br>
+      <li class="list"><a href="#"> For Woman </a></li><br>
+      <li class="list"><a href="#"> Accessories </a></li><br>
+      <li class="list"><a href="#"> Collections </a></li><br>
+      <li class="list"><a href="#"> Other </a></li><br>
+     </ul>
+    </div>
+  </div>
+  <div id="down4">
+    <div class="end1"><h3>NEWSLETTER </h3></div><br><br>
+    <div class="end2">
+      Subscribe to the weekly newsletter for all the<br> latest updates
+    </div><br><br>
+    <div class="twoitems">
+      <div class="justinput">
+        <form action="" id="meo">
+          <input type="text" placeholder="Your email" class="input1">
+          <button class="button1">Subscribe</button>
+        </form>
+      </div>
+  </div>
+ </div>
+ </div>
+
+
+<div id="flexdown" >
+  <div>
+    <p>Copyright © 2022 <a href="#" style="text-decoration: none; color: white; ">ekommart</a>. All Rights Reserved.</p>
+  </div>
+
+  <div class="lasticons" style="color: white; display: flex; gap: 30px;  ">
+    <div> <i class="fa fa-facebook-f" style="font-size:24px"></i>  </div>
+    <div>  <i class="fa fa-twitter" style="font-size:24px"></i> </div>
+    <div>  <i class="fa fa-linkedin" style="font-size:24px"></i> </div>
+    <div> <i class="fa fa-instagram" style="font-size:24px"></i>  </div>
+  </div>
+
+
+  <div class="lasticons" style="display: flex; gap: 30px;">
+    <div> <img src="payment (6).jpg ">  </div>
+    <div>   <img src="payment (6)~3.jpg "> </div>
+    <div>  <img src="payment (6)~4.jpg ">  </div>
+    <div>  <img src="payment (6)~5.jpg ">  </div>
+    <div> <img src="payment (6)~6.jpg ">  </div>
+  </div>
+</div>
+</div>
+
+
+<div class="gobottom">
+ <div class="gobootom1"><a href="#"><div> <i class="fa fa-home" style="font-size:36px"></i></div>  <div>Shop</div></a>  </div>
+ <div class="gobootom1"> <a href="#"><div> <i class="fa fa-user" style="font-size:36px"> </i></div> <div>account </div> </a>  </div>
+ <div class="gobootom1"> <a href="#"><div><i class="fa fa-search" style="font-size:36px"> </i></div><div> search</div></a>  </div>
+ <div class="gobootom1"><a href="#"><div><i class="fa fa-heart" style="font-size:36px;"> </i></div> <div>My wishlist</div></a>  </div>
+</div>
+</body>
+</html>

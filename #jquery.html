@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>hhhhhhhhhhhhh</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src='jquery.js'></script>
+<style>
+    #loo{
+        height: 150px;
+        aspect-ratio: 1;
+        background-color: black;
+        border: solid 5px red;
+        margin-top: 100px;
+        
+    }
+ .oon{
+    border-radius: 30%;
+    background-color: whitesmoke;
+
+ }
+</style>
+
+</head>
+<body>
+<button
+ style="height: 30px;
+ width: 100px;
+ background-color: black; 
+color: white; border-radius: 10px; 
+font-size: 19px;"
+> click</button>
+
+<div id="loo">
+    <div class="oon">
+        <div id="roo"></div>
+    </div>
+
+</div>
+    <script>
+  $(document).ready(function( ){
+                  
+                  $("button").click(function () {
+                                $("#loo").css({
+                              
+                                   borderRadius:"50%"      
+                                })
+                    $("button").Toggle("slow")
+                               
+                            })  
+                      })
+                      $("button").hover(function () {
+                                $("#loo").css({
+                                    marginLeft: "100px",
+                                    transtion:"1s all"
+                                       
+                                })
+                    $("button").Toggle("slow")
+                    $("button") .mouseleave(function () {
+                                $("#loo").css({
+                                    marginLeft: "-10px",
+                                    borderRadius:"5px"
+                                       
+                                })
+                   
+                               
+                            })  
+                               
+                            })  
+                       
+                  
+    </script>
+</body>
+</html>
